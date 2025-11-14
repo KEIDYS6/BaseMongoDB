@@ -67,7 +67,3 @@ mongosh --file queries/03_insert_orders.mongo
  20_filters_operators.mongo     → Consultas con filtros y operadores
  30_aggregations.mongo          → Consultas de agregación
 ```
-
-
- 20_filters_operators.mongo     → Consultas con filtros y operadores
- 30_aggregations.mongo          → Consultas de agregación
