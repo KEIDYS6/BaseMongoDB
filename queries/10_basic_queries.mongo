@@ -1,1 +1,18 @@
-// contenido…
+## Seleccionar todos los clientes
+
+db.clientes.find().pretty()
+
+#Actualizar un cliente
+db.clientes.updateOne(
+  { nombre: "Carlos Gómez" },
+  { $set: { telefono: "3110000011" } }
+);
+
+
+#Eliminar un cliente
+db.clientes.deleteOne({ nombre: "Ana Torres" })
+
+#Consultar pedidos enviados
+
+db.pedidos.find({ estado: "Enviado" }).pretty()
+
