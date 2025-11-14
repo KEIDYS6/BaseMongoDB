@@ -1,3 +1,9 @@
+
+#Contar cuántos clientes están activos
+db.clientes.find({ activo: true }).pretty()
+
+
+
 #Promedio de antigüedad de los clientes (en días)
 
 db.clientes.aggregate([
