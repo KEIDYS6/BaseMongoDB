@@ -1,2 +1,17 @@
-use('TiendaOnline');
-// contenido…
+use("TiendaOnline");
+
+db.productos.insertOne({
+  nombre: "Laptop HP",
+  categoria: "Tecnología",
+  precio: 2800000,
+  stock: 12,
+  disponible: true
+});
+
+db.productos.insertOne({
+  nombre: "Auriculares Bluetooth",
+  categoria: "Accesorios",
+  precio: 120000,
+  stock: 45,
+  disponible: true
+});
