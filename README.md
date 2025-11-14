@@ -68,6 +68,6 @@ mongosh --file queries/03_insert_orders.mongo
  30_aggregations.mongo          → Consultas de agregación
 ```
 
-10_basic_queries.mongo         → Consultas básicas CRUD```
+
  20_filters_operators.mongo     → Consultas con filtros y operadores
  30_aggregations.mongo          → Consultas de agregación
