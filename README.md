@@ -63,7 +63,5 @@ mongosh --file queries/03_insert_orders.mongo
 ```
 3 Realizas las consultas 
 
-
-Ejemplo de conexión (no incluyas tu contraseña en G
 itHub):
 dirección de envío
