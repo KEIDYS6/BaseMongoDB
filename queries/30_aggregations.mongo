@@ -1,1 +1,23 @@
-// contenido…
+#Promedio de antigüedad de los clientes (en días)
+
+db.clientes.aggregate([
+  {
+    $project: {
+      dias_antiguedad: {
+        $divide: [
+          { $subtract: [ new Date(), "$fecha_registro" ] },
+          1000 * 60 * 60 * 24
+        ]
+      }
+    }
+  },
+  {
+    $group: {
+      _id: null,
+      promedio_antiguedad_dias: { $avg: "$dias_antiguedad" }
+    }
+  }
+])
+
+
+#
