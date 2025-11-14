@@ -1,2 +1,29 @@
-use('TiendaOnline');
-// contenido…
+use("TiendaOnline");
+
+db.clientes.insertOne({
+  nombre: "Laura Martínez",
+  correo: "laura.martinez@example.com",
+  telefono: "3124567890",
+  direccion: { calle: "Carrera 10 #25-30", ciudad: "Bogotá", pais: "Colombia" },
+  fecha_registro: ISODate("2025-11-13T00:00:00.000Z"),
+  activo: true
+});
+
+db.clientes.insertOne({
+  nombre: "Carlos Gómez",
+  correo: "carlos.gomez@example.com",
+  telefono: "3009876543",
+  direccion: { calle: "Calle 8 #45-22", ciudad: "Medellín", pais: "Colombia" },
+  fecha_registro: ISODate("2025-10-01T00:00:00.000Z"),
+  activo: true
+});
+
+db.clientes.insertOne({
+  nombre: "Paula Vanegas",
+  correo: "pau.v@example.com",
+  telefono: "3008324543",
+  direccion: { calle: "Calle 10 #45-12", ciudad: "Valledupar", pais: "Colombia" },
+  fecha_registro: ISODate("2025-11-01T00:00:00.000Z"),
+  activo: true
+});
+
