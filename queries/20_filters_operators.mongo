@@ -8,6 +8,5 @@ db.clientes.find({ "direccion.ciudad": "Medellín" }).pretty();
 #Clientes registrados después del 1 de noviembre 2025
 db.clientes.find({ fecha_registro: { $gt: ISODate("2025-11-01") } });
 
-#Contar cuántos clientes están activos
-db.clientes.find({ activo: true }).pretty()
+
 
